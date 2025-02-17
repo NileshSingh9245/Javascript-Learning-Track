@@ -38,3 +38,26 @@ console.log(typeof myfunction);
 console.log(typeof heros);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//########################## MEMORY MANAGEMENT ########################################
+
+// stack(primitve): Here whenever we try to access we get a copy of the variable,
+// Heap(Non-Primitive): Here we get to change the original value whenever we access
+
+let mySite = "nileshKsingh.com"
+
+let anotherSite = mySite
+anotherSire = "Nilesh Singh"
+console.log(anotherSite)
+
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl",
+}
+
+let userTwo = userOne
+userTwo.email = "nilesh@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
