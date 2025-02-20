@@ -1,7 +1,7 @@
 # The Kashmir Conflict: A Brief Overview
 
 **Introduction:**
-Jai Hind. Today, I will give a simple overview of the ongoing dispute between India and Pakistan, focusing particularly on the region of Kashmir, which remains a main point of disagreement between these two countries.
+Jai Hind. Today, I will give a simple overview of the ongoing dispute between India and Pakistan, focusing particularly on the region of Kashmir, which continues to be the primary bone of contention between these two nations.
 
 ## Historical Context
 The roots of the Kashmir conflict go back to the partition of British India in 1947. When the subcontinent was split into India and Pakistan, princely states were given the choice to join either country. The princely state of Jammu and Kashmir, which had a Muslim majority but was ruled by a Hindu king, Maharaja Hari Singh, chose to stay independent at first.
