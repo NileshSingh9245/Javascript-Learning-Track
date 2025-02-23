@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Changer</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        #container{
+            margin: auto;
+            width: 800px;
+            height: 600px;
+            border: 2px solid black;
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:2em;
+
+        }
+        #circle{
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="circle">
+            
+        </div>
+
+        <div id="buttons">
+            <button id="bgchangeButton"> Change Background color</button>
+            <button id="changeShape">Change Shape Color</button>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+<script>
+    let circle = document.getElementById('circle')
+    let buttonBG = document.getElementById('bgchangeButton')
+    let buttonShape = document.getElementById('changeShape')
+    //let body = document.getElementsByTagName('body')
+    let isColored = false;
+    function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+         return color;
+ }
+   
+    buttonBG.addEventListener('click', ()=>{
+        //document.body.style.backgroundColor == "black" ? document.body.style.backgroundColor = "white" : document.body.style.backgroundColor = "black";
+        if(isColored){
+            document.body.style.backgroundColor = getRandomColor();
+        }else{
+            document.body.style.backgroundColor = "white";
+        }
+        isColored = !isColored;
+        
+    })
+    buttonShape.addEventListener('click', ()=>{
+        circle.style.backgroundColor= 'red';
+
+        if(isColored){
+            circle.style.backgroundColor= getRandomColor();
+        }else{
+            circle.style.backgroundColor = "white";
+        }
+        isColored = !isColored;
+    })
+
+
+</script>
+</html>
